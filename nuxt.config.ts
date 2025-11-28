@@ -69,7 +69,11 @@ export default defineNuxtConfig({
   },
 
   // Nitro configuration for SSR
+  // Preset will be auto-detected by Vercel
   nitro: {
-    preset: 'node-server'
+    prerender: {
+      crawlLinks: true,
+      routes: ['/']
+    }
   }
 })
