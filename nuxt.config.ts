@@ -66,14 +66,5 @@ export default defineNuxtConfig({
       adminWhatsapp: process.env.ADMIN_WHATSAPP || '+919876543210', // Your admin WhatsApp number
       adminPin: process.env.ADMIN_PIN || '1234' // Simple PIN for MVP
     }
-  },
-
-  // Nitro configuration for SSR
-  // Preset will be auto-detected by Vercel
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: ['/']
-    }
   }
 })
